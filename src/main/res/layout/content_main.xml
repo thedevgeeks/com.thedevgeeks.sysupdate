@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main" tools:context=".MainActivity"
+    android:id="@+id/main"
+    android:background="@android:color/black">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check now"
+        android:id="@+id/button"
+        android:textColor="@android:color/black"
+        android:clickable="true"
+        android:theme="@android:style/Holo.Light.ButtonBar"
+        android:layout_marginEnd="52dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="52dp"
+        android:paddingEnd="@android:dimen/app_icon_size"
+        android:paddingStart="@android:dimen/app_icon_size"
+        android:textSize="30dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:enabled="true"
+        android:focusable="true"
+        android:background="@android:color/holo_blue_light" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView"
+        android:textColor="@android:color/holo_blue_light"
+        android:text="Your System is up to date"
+        android:textSize="60dp"
+        android:singleLine="true"
+        android:typeface="monospace"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="193dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:id="@+id/textView2"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="20dp"
+        android:singleLine="true"
+        android:typeface="monospace"
+        android:textAlignment="center"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:textIsSelectable="true"
+        android:text="TextView2" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:indeterminate="true"
+        android:layout_below="@+id/textView"
+        android:layout_above="@+id/button"
+        android:visibility="invisible" />
+
+</RelativeLayout>
